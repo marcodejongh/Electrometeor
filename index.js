@@ -204,10 +204,13 @@ app.on('ready', function () {
     };
     // Create the browser window.
     var windowOptions = {
-      width: 800,
-      height: 600,
+      width: 1280,
+      height: 768,
       resizeable: true,
-      frame: true
+      frame: true,
+      "web-preferences": {
+        "web-security": false
+      }
     };
     mainWindow = new BrowserWindow(windowOptions);
     mainWindow.focus();
